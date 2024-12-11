@@ -1,0 +1,280 @@
+
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ff00;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Perfil y sesión */
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .profile-info span {
+            font-size: 1rem;
+        }
+
+        .btn-cerrar {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cerrar:hover {
+            background-color: #e60000;
+        }
+
+        /* Formulario de préstamo */
+        .loan-form {
+            margin-top: 40px;
+            background-color: #333;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        }
+
+        .loan-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00ff00;
+        }
+
+        .loan-form select,
+        .loan-form input,
+        .loan-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #444;
+            color: #fff;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+
+        .loan-form select:focus,
+        .loan-form input:focus,
+        .loan-form textarea:focus {
+            border-color: #00ff00;
+            outline: none;
+        }
+
+        .loan-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00ff00;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .loan-form button:hover {
+            background-color: #00cc00;
+        }
+
+        .loan-form button:active {
+            background-color: #00b300;
+        }
+
+        /* Botón para generar PDF */
+        #generatePDFBtn {
+            width: 100%;
+            padding: 12px;
+            background-color: #00ff00;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        #generatePDFBtn:hover {
+            background-color: #00cc00;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile img {
+                margin-bottom: 10px;
+            }
+
+            .profile-info {
+                align-items: center;
+            }
+
+            .loan-form {
+                padding: 20px;
+            }
+
+            .loan-form select,
+            .loan-form input,
+            .loan-form textarea {
+                font-size: 0.9rem;
+            }
+
+            .loan-form button {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            #generatePDFBtn {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .loan-form {
+                padding: 15px;
+            }
+
+            .loan-form select,
+            .loan-form input,
+            .loan-form textarea {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+
+            .loan-form button {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            #generatePDFBtn {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+
+        /* Contenedor del perfil */
+.profile-box {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px; /* Espacio debajo del cuadro */
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.6);
+}
+
+/* Estilos para la caja de perfil dentro de .profile-box */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para la imagen de perfil */
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Información de perfil */
+.profile-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-info span {
+    font-size: 1rem;
+}
+
+/* Botón de cerrar sesión */
+.btn-cerrar {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cerrar:hover {
+    background-color: #e60000;
+}
+
+   
+
+
+
+
+
